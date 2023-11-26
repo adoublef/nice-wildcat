@@ -9,7 +9,7 @@ const nextConfig = {
     // skipTrailingSlashRedirect: true,
 
     // Optional: Change the output directory `out` -> `dist`
-    distDir: 'dist',
+    // distDir: 'dist',
 
     // When running Next.js via Node.js (e.g. `dev` mode), proxy API requests
     // to the Go server.
