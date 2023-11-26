@@ -1,0 +1,16 @@
+version: 3
+
+tasks:
+  default:
+    desc: list tasks
+    cmd: task --list-all
+
+  build:
+    desc: build frontend
+    cmd: go generate ./...
+
+  dev:
+    desc: run go server
+    deps:
+      - build
+    cmd: go run ./...
