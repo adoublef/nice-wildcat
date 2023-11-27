@@ -5,12 +5,17 @@ tasks:
     desc: list tasks
     cmd: task --list-all
 
-  build:
+  gen:
     desc: build frontend
     cmd: go generate ./...
 
-  dev:
+  run:
     desc: run go server
     deps:
-      - build
+      - gen
     cmd: go run ./...
+
+  build:
+    desc: build docker image
+    cmds:
+      - docker build -t=nice-wildcat:latest .

@@ -1,4 +1,4 @@
-//go:generate pnpm run build
+//go:generate npm run build
 package ui
 
 import (
