@@ -19,3 +19,28 @@ tasks:
     desc: build docker image
     cmds:
       - docker build -t=nice-wildcat:latest .
+
+  test:
+    desc: run golang testing
+    cmd: go test -v -count=1 {{.CLI_ARGS}}
+
+  cache:
+    desc: cache dependencies
+    cmd: go mod tidy
+
+  fmt:
+    desc: format code
+    cmd: go fmt ./...
+
+  stop:
+    desc: terminate application
+    cmd: docker-compose down --volumes
+
+  start:
+    desc: run application
+    deps: [stop,cache]
+    cmd: docker-compose up -d --build --force-recreate
+
+  logs:
+    desc: list logs
+    cmd: docker-compose logs -f
