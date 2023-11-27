@@ -1,0 +1,4 @@
+github.com/adoublef/prelude v0.1.10 h1:fv+SCPQvaWLmAUOu7TGAr2H93r39bLMDiC76JjytpaA=
+github.com/adoublef/prelude v0.1.10/go.mod h1:0fLtRU1dkp7do+UB7BzgNYUjSgSYmJBT9M11vLDP764=
+github.com/matryer/is v1.4.1 h1:55ehd8zaGABKLXQUe2awZ99BD/PTc2ls+KV/dXphgEQ=
+github.com/matryer/is v1.4.1/go.mod h1:8I/i5uYgLzgsgEloJE1U6xx5HkBQpAZvepWuujKwMRU=
