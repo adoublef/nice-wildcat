@@ -5,7 +5,7 @@ import (
 	"embed"
 	"net/http"
 
-	fs "github.com/adoublef/nice-wildcat"
+	"github.com/adoublef/prelude/http/fs"
 )
 
 //go:embed all:out/*
